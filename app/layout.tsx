@@ -5,8 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "NextAuth Practice",
-  description: "Practicing the new version of next-auth",
+  title: "Next-authP",
+  description: "NextAuth-powered authentication practice",
 };
 
 export default function RootLayout({

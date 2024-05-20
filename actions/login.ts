@@ -1,14 +1,14 @@
-"use server";
-import * as z from "zod";
-import { revalidatePath, revalidateTag } from "next/cache";
-import { LoginSchema } from "@/schemas/inedx";
+"use server"
 
-export const loginAction = async (values: z.infer<typeof LoginSchema>) => {
+import * as z from 'zod';
+import { LoginSchema } from '@/schemas';
+
+export const login = async (values: z.infer<typeof LoginSchema>) => {
     const validatedFields = LoginSchema.safeParse(values);
 
     if (!validatedFields.success) {
-        return { error: "Invalild fields!" };
+        return { error: "Invalid fields!" };
     }
 
-    return { success: "Email sent1" };
-}
+    return { success: 'Email sent!' };
+};

@@ -1,12 +1,10 @@
-import { RegisterSchema } from "@/schemas/inedx";
+import React from 'react'
 import { RegisterForm } from '@/components/auth/register-form'
 
 const RegisterPage = () => {
     return (
-        <div>
-            <RegisterForm />
-        </div>
-    );
+        <RegisterForm />
+    )
 }
 
-export default RegisterPage;
+export default RegisterPage
