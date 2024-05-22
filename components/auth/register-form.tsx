@@ -118,7 +118,7 @@ export const RegisterForm = () => {
                     className='w-full'
                     disabled={isPending}
                 >
-                    Login
+                    Register
                 </Button>
             </form>
 
